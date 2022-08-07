@@ -11,7 +11,7 @@
     "fmt:dprint": "dprint fmt --config ./dprint.json"
   },
   "engines": {
-    "node": "17.x"
+    "node": "16.x"
   },
   "dependencies": {
     "chrome-aws-lambda": "^10.1.0",
