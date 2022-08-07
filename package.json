@@ -1,0 +1,48 @@
+{
+  "name": "bandcamp2image",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "lint": "run-s lint:eslint lint:dprint",
+    "lint:eslint": "eslint . --ext .js,.jsx,.ts,.tsx --cache",
+    "lint:dprint": "dprint check --config ./dprint.json",
+    "fmt": "run-s fmt:eslint fmt:dprint",
+    "fmt:eslint": "npm run lint:eslint -- --fix",
+    "fmt:dprint": "dprint fmt --config ./dprint.json"
+  },
+  "engines": {
+    "node": "17.x"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "is-url": "^1.2.4",
+    "puppeteer-core": "^13.5.2",
+    "@react-icons/all-files": "^4.1.0",
+    "axios": "^0.21.4",
+    "date-fns": "^2.24.0",
+    "next": "^12.1.4",
+    "nextjs-progressbar": "^0.0.11",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/is-url": "^1.2.30",
+    "@types/node": "^16.10.1",
+    "@types/puppeteer-core": "^5.4.0",
+    "@types/react": "^18.0.15",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "@vercel/node": "^1.11.1",
+    "eslint": "^8.12.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "npm-run-all": "^4.1.5",
+    "puppeteer": "^13.5.2",
+    "typescript": "^4.6.3",
+    "vercel": "^24.0.1"
+  }
+}
